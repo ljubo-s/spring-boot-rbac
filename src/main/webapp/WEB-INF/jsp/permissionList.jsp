@@ -23,26 +23,26 @@
 				<th scope="row"></th>
 			</tr>
 			<tbody>
-				<c:forEach items="${permissionList }" var="permission">
+				<c:forEach items="${permissionList}" var="permission">
 					<tr>
-						<td>${permission.id }</td>
-						<td>${permission.title }</td>
-						<td>${permission.module }</td>
-						<td>${permission.key }</td>
+						<td>${permission.id}</td>
+						<td>${permission.title}</td>
+						<td>${permission.module}</td>
+						<td>${permission.key}</td>
 						<td>
-							<spring:url value="/permission/updatePermission/${permission.id }" var="updateURL" />
-							<a class="btn btn-primary" href="${updateURL }" role="button">Update</a>
+							<spring:url value="/permission/updatePermission/${permission.id}" var="updateURL" />
+							<a class="btn btn-primary" href="${updateURL}" role="button">Update</a>
 						</td>
 						<td>
-							<spring:url value="/permission/deletePermission/${permission.id }" var="deleteURL" />
-							<a class="btn btn-primary" href="${deleteURL }" role="button">Delete</a>
+							<spring:url value="/permission/deletePermission/${permission.id}" var="deleteURL" />
+							<a class="btn btn-primary" href="${deleteURL}" role="button">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 		<spring:url value="/permission/addPermission/" var="addURL" />
-		<a class="btn btn-primary" href="${addURL }" role="button">Add New Permission</a>
+		<a class="btn btn-primary" href="${addURL}" role="button">Add New Permission</a>
 	</div>
 </body>
 </html>

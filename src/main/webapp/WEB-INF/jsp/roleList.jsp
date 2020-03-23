@@ -23,26 +23,26 @@
 				<th scope="row">Delete</th>
 			</tr>
 			<tbody>
-				<c:forEach items="${roleList }" var="role">
+				<c:forEach items="${roleList}" var="role">
 					<tr>
-						<td>${role.id }</td>
-						<td>${role.title }</td>
-						<td>${role.description }</td>
-						<td>${role.status }</td>
+						<td>${role.id}</td>
+						<td>${role.title}</td>
+						<td>${role.description}</td>
+						<td>${role.status}</td>
 						<td>
-							<spring:url value="/role/updateRole/${role.id }" var="updateURL" />
-							<a class="btn btn-primary" href="${updateURL }" role="button">Update</a>
+							<spring:url value="/role/updateRole/${role.id}" var="updateURL" />
+							<a class="btn btn-primary" href="${updateURL}" role="button">Update</a>
 						</td>
 						<td>
-							<spring:url value="/role/deleteRole/${role.id }" var="deleteURL" />
-							<a class="btn btn-primary" href="${deleteURL }" role="button">Delete</a>
+							<spring:url value="/role/deleteRole/${role.id}" var="deleteURL" />
+							<a class="btn btn-primary" href="${deleteURL}" role="button">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 		<spring:url value="/role/addRole/" var="addURL" />
-		<a class="btn btn-primary" href="${addURL }" role="button">Add New Role</a>
+		<a class="btn btn-primary" href="${addURL}" role="button">Add New Role</a>
 	</div>
 </body>
 </html>

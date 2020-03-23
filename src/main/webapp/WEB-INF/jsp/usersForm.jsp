@@ -14,7 +14,7 @@
 	<div class="container">
 		<spring:url value="/users/saveUsers" var="saveURL" />
 		<h2>Users</h2>
-		<form:form modelAttribute="usersForm" method="post" action="${saveURL }" cssClass="form">
+		<form:form modelAttribute="usersForm" method="post" action="${saveURL}" cssClass="form">
 			<form:hidden path="id" />
 			<div class="form-group">
 				<label>Userame</label>

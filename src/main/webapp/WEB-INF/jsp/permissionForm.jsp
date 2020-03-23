@@ -14,7 +14,7 @@
 	<div class="container">
 		<spring:url value="/permission/savePermission" var="saveURL" />
 		<h2>Permission</h2>
-		<form:form modelAttribute="permissionForm" method="post" action="${saveURL }" cssClass="form">
+		<form:form modelAttribute="permissionForm" method="post" action="${saveURL}" cssClass="form">
 			<form:hidden path="id" />
 			<div class="form-group">
 				<label>Name</label>

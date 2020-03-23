@@ -70,7 +70,7 @@ public class UsersController {
         Users users = new Users();
         map.put("users", users);
         map.put("usersList", usersService.getAllUsers());
-        
+
         return "users";
     }
 

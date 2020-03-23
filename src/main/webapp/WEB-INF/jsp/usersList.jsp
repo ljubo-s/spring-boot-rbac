@@ -24,27 +24,27 @@
 				<th scope="row">Delete</th>
 			</tr>
 			<tbody>
-				<c:forEach items="${usersList }" var="users">
+				<c:forEach items="${usersList}" var="users">
 					<tr>
-						<td>${users.id }</td>
-						<td>${users.username }</td>
-						<td>${users.password }</td>
-						<td>${users.status }</td>
-						<td>${users.dateofinsert }</td>
+						<td>${users.id}</td>
+						<td>${users.username}</td>
+						<td>${users.password}</td>
+						<td>${users.status}</td>
+						<td>${users.dateofinsert}</td>
 						<td>
-							<spring:url value="/users/updateUsers/${users.id }" var="updateURL" />
-							<a class="btn btn-primary" href="${updateURL }" role="button">Update</a>
+							<spring:url value="/users/updateUsers/${users.id}" var="updateURL" />
+							<a class="btn btn-primary" href="${updateURL}" role="button">Update</a>
 						</td>
 						<td>
-							<spring:url value="/users/deleteUsers/${users.id }" var="deleteURL" />
-							<a class="btn btn-primary" href="${deleteURL }" role="button">Delete</a>
+							<spring:url value="/users/deleteUsers/${users.id}" var="deleteURL" />
+							<a class="btn btn-primary" href="${deleteURL}" role="button">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 		<spring:url value="/users/addUsers/" var="addURL" />
-		<a class="btn btn-primary" href="${addURL }" role="button">Add New Users</a>
+		<a class="btn btn-primary" href="${addURL}" role="button">Add New Users</a>
 	</div>
 </body>
 </html>

@@ -57,18 +57,18 @@
 				<table style="border: 1px solid; min-width: 80%; max-width: 100%; text-align: center" id="table_id">
 					<thead style="background: #d3dce3">
 						<tr>
-							<th>rb</th>
+							<th>on</th>
 							<th>Id</th>
 							<th>Title</th>
 							<th>Description</th>
-							<th>Stauts</th>
+							<th>Status</th>
 						</tr>
 					</thead>
 					<tbody style="background: #ccc">
 						<c:forEach items="${roleList}" var="role" varStatus="i">
 							<tr align="center">
 								<td>
-									<c:out value="${i.index + 1 }" />
+									<c:out value="${i.index + 1}" />
 								</td>
 								<td>${role.id}</td>
 								<td>${role.title}</td>

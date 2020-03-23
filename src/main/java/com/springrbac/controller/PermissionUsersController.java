@@ -55,13 +55,13 @@ public class PermissionUsersController {
 
     @RequestMapping(value = "/savePermissionUsers", method = RequestMethod.POST)
     public ModelAndView savePermissionUsers(@ModelAttribute("permissionUsersForm") PermissionUsers permissionUsers) {
-        
+
         try {
             permissionUsersService.saveOrUpdate(permissionUsers);
         } catch (final Exception e) {
             System.err.println("Caught IOException: " + e.getMessage());
         }
-        
+
         return new ModelAndView("redirect:/permissionUsers/list");
     }
 

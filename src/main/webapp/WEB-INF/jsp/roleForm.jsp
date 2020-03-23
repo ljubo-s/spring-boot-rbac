@@ -14,7 +14,7 @@
 	<div class="container">
 		<spring:url value="/role/saveRole" var="saveURL" />
 		<h2>Role</h2>
-		<form:form modelAttribute="roleForm" method="post" action="${saveURL }" cssClass="form">
+		<form:form modelAttribute="roleForm" method="post" action="${saveURL}" cssClass="form">
 			<form:hidden path="id" />
 			<div class="form-group">
 				<label>Name</label>

@@ -20,7 +20,7 @@
 						<tr>
 							<td>Id</td>
 							<td>
-								<form:input path="id" id="paramid" value="${param.id}" />
+								<form:input path="id"></form:input>
 							</td>
 						</tr>
 						<tr>
@@ -63,11 +63,11 @@
 				<table style="border: 1px solid; min-width: 80%; max-width: 100%; text-align: center" id="table_id">
 					<thead style="background: #d3dce3">
 						<tr>
-							<th>rb</th>
+							<th>on</th>
 							<th>Id</th>
 							<th>Username</th>
 							<th>Password</th>
-							<th>Stauts</th>
+							<th>Status</th>
 							<th>Date of insert</th>
 						</tr>
 					</thead>
@@ -75,7 +75,7 @@
 						<c:forEach items="${usersList}" var="users" varStatus="i">
 							<tr align="center">
 								<td>
-									<c:out value="${i.index + 1 }" />
+									<c:out value="${i.index + 1}" />
 								</td>
 								<td>${users.id}</td>
 								<td>${users.username}</td>

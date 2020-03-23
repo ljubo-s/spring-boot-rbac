@@ -49,13 +49,13 @@ public class RoleController {
 
     @RequestMapping(value = "/saveRole", method = RequestMethod.POST)
     public ModelAndView saveRole(@ModelAttribute("roleForm") Role role) {
-        
+
         try {
             roleService.saveOrUpdate(role);
         } catch (final Exception e) {
             System.err.println("Caught IOException: " + e.getMessage());
         }
-    
+
         return new ModelAndView("redirect:/role/list");
     }
 

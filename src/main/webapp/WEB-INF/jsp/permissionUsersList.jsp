@@ -24,27 +24,27 @@
 				<th scope="row">Delete</th>
 			</tr>
 			<tbody>
-				<c:forEach items="${permissionUsersList }" var="permissionUsers">
+				<c:forEach items="${permissionUsersList}" var="permissionUsers">
 					<tr>
-						<td>${permissionUsers.id }</td>
-						<td>${permissionUsers.description }</td>
-						<td>${permissionUsers.status }</td>
-						<td>${permissionUsers.users.id }</td>
-						<td>${permissionUsers.permission.id }</td>
+						<td>${permissionUsers.id}</td>
+						<td>${permissionUsers.description}</td>
+						<td>${permissionUsers.status}</td>
+						<td>${permissionUsers.users.id}</td>
+						<td>${permissionUsers.permission.id}</td>
 						<td>
-							<spring:url value="/permissionUsers/updatePermissionUsers/${permissionUsers.id }" var="updateURL" />
-							<a class="btn btn-primary" href="${updateURL }" role="button">Update</a>
+							<spring:url value="/permissionUsers/updatePermissionUsers/${permissionUsers.id}" var="updateURL" />
+							<a class="btn btn-primary" href="${updateURL}" role="button">Update</a>
 						</td>
 						<td>
-							<spring:url value="/permissionUsers/deletePermissionUsers/${permissionUsers.id }" var="deleteURL" />
-							<a class="btn btn-primary" href="${deleteURL }" role="button">Delete</a>
+							<spring:url value="/permissionUsers/deletePermissionUsers/${permissionUsers.id}" var="deleteURL" />
+							<a class="btn btn-primary" href="${deleteURL}" role="button">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 		<spring:url value="/permissionUsers/addPermissionUsers/" var="addURL" />
-		<a class="btn btn-primary" href="${addURL }" role="button">Add New Permission x Users</a>
+		<a class="btn btn-primary" href="${addURL}" role="button">Add New Permission x Users</a>
 	</div>
 </body>
 </html>
