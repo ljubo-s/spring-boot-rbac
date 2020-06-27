@@ -21,7 +21,7 @@
 ### Configurations
 Open the `application.properties` file and set your own configurations for the database connection.
 ###    Create database
-Open `db.sql file` and use code for creating database.
+Open [`db.sql file`](/src/main/resources/db.sql) and use code for creating database.
 ### Prerequisites
 -	Java 
 -	Gradle
